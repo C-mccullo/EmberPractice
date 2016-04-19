@@ -8,17 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for "head"}}
+    <!-- "Model" created by Treehouse Ember-->
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/ember-app.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
-
     <script src="assets/vendor.js"></script>
     <script src="assets/ember-app.js"></script>
+    <!-- if I need to load any data fixtures into Ember, place the file into the public folder because Ember-cli will compile the file into the dist folder (where the actual actual application is rendered on page) -->
+    <script src="store.js"></script>
 
     {{content-for "body-footer"}}
   </body>
