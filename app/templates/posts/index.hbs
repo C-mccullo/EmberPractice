@@ -1,0 +1,9 @@
+
+<h1>Draculas Blog</h1>
+
+<ul>
+	{{#each model as |post|}}
+		<li>{{#link-to 'posts.post' post.id}} {{post.title}} {{/link-to}}</li>
+	{{/each}}
+</ul>
+

@@ -3,7 +3,7 @@
 
 <ul>
 	{{#each model as |post|}}
-		<li>{{#link-to 'post' post.id}} {{post.title}} {{/link-to}}</li>
+		<li>{{#link-to 'posts.post' post.id}} {{post.title}} {{/link-to}}</li>
 	{{/each}}
 </ul>
 
